@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="archi-glb" src="pauline.glb"></a-asset-item>
+        <a-asset-item id="archi2-obj" src="pauline-2.obj"></a-asset-item>
+        <a-asset-item id="archi2-mtl" src="pauline-2.mtl"></a-asset-item>
+        <a-asset-item id="archi3-obj" src="pauline-3.obj"></a-asset-item>
+        <a-asset-item id="archi3-mtl" src="pauline-3.mtl"></a-asset-item>
+
+      </a-assets>
+
+      <a-entity gltf-model="#archi-glb" position="0 0 -5" scale="3 3 3" ></a-entity>
+      <a-entity obj-model="obj: #archi2-obj; mtl: #archi2-mtl" position="9.3 0.3 4.5" rotation= "0 -90 0" scale="25 25 25" ></a-entity>
+      <a-entity obj-model="obj: #archi3-obj; mtl: #archi3-mtl" position="-11 0.3 4.5" rotation= "0 90 0" scale="25 25 25" ></a-entity>
+
+      <a-plane position="0 0 0" rotation="-90 0 0" width="3" height="3" color="#000"></a-plane>
+      <a-sky color="#000"></a-sky>
+    </a-scene>
+  </body>
+</html>
